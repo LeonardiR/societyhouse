@@ -1,0 +1,22 @@
+{
+  "name": "societyhouse",
+  "version": "1.0.0",
+  "description": "Society House Site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css": "node-sass --output-style compressed --source-comments --include-path scss scss/main.scss style.css",
+    "autoprefixer": "postcss -r style.css",
+    "js": "uglifyjs js/*.js --compress --mangle > app.min.js",
+    "watch": "nodemon --ignore app.min.js -e scss,js -x \"npm run css && npm run autoprefixer & npm run js\""
+  },
+  "author": "Regulo Leonardi",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^9.4.4",
+    "node-sass": "^4.11.0",
+    "nodemon": "^1.18.9",
+    "postcss-cli": "^6.1.1",
+    "uglify-js": "^3.4.9"
+  }
+}

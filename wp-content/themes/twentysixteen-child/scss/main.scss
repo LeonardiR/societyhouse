@@ -1,0 +1,21 @@
+/*!
+Theme Name: 	Twenty Sixteen Child
+Description:	Child Theme for Twenty Sixteen
+Template:		twentysixteen
+Version: 		1.0.0.0
+*/
+
+@import "_config/main";
+@import "_tools/main";
+@import "common/main";
+body {
+  background-color: $white;
+  font-family: MaisonNeue-Book !important;
+}
+h1, h2, h3, h4, h5, h6{
+  color: $navy-blue;
+  font-family: MaisonNeue-Book !important;
+}
+img{
+  width: 100%;
+}
